@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task2b js</title>
+</head>
+<body>
+	<p id="demo">	</p>
+<script type="text/javascript">
+	var m_mass=60;
+	var m_hight=5;
+	var m_hight2=m_hight*m_hight;
+	var m_bmi=m_mass/m_hight2;
+	var j_mass=50;
+	var j_hight=6;
+	var j_hight2=j_hight*j_hight;
+	var j_bmi=j_mass/j_hight2;
+	document.getElementById("demo").innerHTML = (m_bmi < j_bmi);
+	if (m_bmi < j_bmi) {
+		console.log("Mark has a higher BMI than John");
+	}
+	else
+	{
+		console.log("John has a higher BMI than Mark");
+	}
+
+</script>
+</body>
+</html>
