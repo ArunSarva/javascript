@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task5a js</title>
+</head>
+<body>
+	<p id="demo">
+		<input type="text" id="myText" value=" "onfocus="this.value=''">
+		<button onclick="myFunction()"onclick="document.getElementById('myText').value = ''" value="reset">ADD</button>
+		<button onclick="display()">Display</button>
+	</p>
+	<script type="text/javascript">
+		var x=[];
+		var i=0;
+
+		function myFunction() 
+		{
+ 		  x[i]= document.getElementById("myText").value;
+ 		  alert(x[i]+"is Added");
+ 		  i++;
+		}
+		function display()
+		{
+			for (i = 0; i <x.length; i++) {
+				document.write(x[i]+"<br>");
+			}
+		}
+		
+	</script>
+
+</body>
+</html>
