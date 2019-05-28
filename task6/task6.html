@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>task6 js</title>
+		<link rel="stylesheet" type="text/css" href="./css/task6.css">
+		<script type="text/javascript">
+
+			function Checked(){
+				var num=document.getElementsByName('acs');
+				var sum=0;
+				for(var i=0; i<num.length; i++){
+					if(num[i].type=='checkbox' && num[i].checked==true)
+						sum+=parseInt(num[i].value);
+				}
+				
+				document.getElementById('demo').innerHTML =sum;
+			}			
+			function unselectall()
+			{var num=document.getElementsByName('acs');
+				for(var i=0; i<num.length; i++){
+					if(num[i].type=='checkbox')
+						num[i].checked=false;
+				}
+			}
+			function selectAll() {
+        var items = document.getElementsByName('acs');
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].type == 'checkbox')
+                items[i].checked = true;
+        }
+    }
+			
+		</script>
+	</head>
+<body >
+	<h1 >Get the Total</h1>
+	<input type="checkbox" class="check_box" name="acs" value=5>$5
+	<input type="checkbox" class="check_box" name="acs" value=10>$10
+	<input type="checkbox" class="check_box" name="acs" value=15>$15<br>
+	<input type="checkbox" class="check_box" name="acs" value=20>$20
+	<input type="checkbox" class="check_box" name="acs" value=25>$25
+	<input type="checkbox" class="check_box" name="acs" value=30>$30<br>
+	<p>
+		<input type="button" id="selectall" onclick='selectAll()' value="select all"/>
+		<input type="button" id="unselectAll" onclick='unselectall()' value="unselect all"/><br>
+		<input type="button" id="total" onclick='Checked()' value="Total"/>
+	</p>
+	<p id="demo"></p>
+</body>
+
+</html>

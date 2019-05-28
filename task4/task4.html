@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task4 string</title>
+	<source src="" type="">
+</head>
+<body>
+	<script type="text/javascript">
+		var str = reverse("Hi good morning!");
+		// function reverse(str){
+  // 	let reversed = "";    
+  // 	for (var i = str.length - 1; i >= 0; i--)
+  // 	{        
+  //   	reversed += str[i];
+  //   	document.write(reversed);
+  //   	document.write(str);
+  // 	}    
+  // return reversed;
+	//}
+	//document.write(str);
+	function reverse(str)
+	{
+		let reversed = "";
+		var z="";
+		var temp ="";
+		var t=0;
+		debugger;
+		for (var i = str.length - 1; i >= 0; i--)
+		{
+			temp += str[i];
+      str[i] = str[i-1] ;
+      str[t]=temp;
+      t++;
+ 			console.log(temp);
+ 			//for (var i = str.length - 1; i >= 0; i--)
+		//{
+			//console.log(str[i]);
+		//}
+		}
+	}
+	</script>
+
+</body>
+</html>

@@ -11,8 +11,14 @@
 		
 		function myFunction() 
 		{
-  		document.getElementById("demo").style.backgroundColor = "red";
-  		document.getElementById("demo").style.backgroundColor = "reset";
+  		if (document.getElementById("demo").style.backgroundColor == "red")
+  		{
+  			document.getElementById("demo").style.backgroundColor = "white";
+  		}
+  		else
+  		{
+  			document.getElementById("demo").style.backgroundColor = "red";
+  		}
  		}
 		function myFunction1() 
 		{

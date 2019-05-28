@@ -1,0 +1,36 @@
+#total
+{
+	border:none;
+	background-color: #36cc30;
+	width:110px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 550px;
+	margin-top: 20px;
+}
+#selectall
+{
+	border:none;
+	background-color: #cc4230;
+	width:110px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 500px;
+}
+#unselectAll
+{
+	border:none;
+	background-color: #cc4230;
+	width:110px;
+	height: 40px;
+	border-radius: 5px;
+}
+.check_box
+{
+	margin-left: 270px;
+	background-color: #3487a3;
+}
+h1
+{
+	margin-left: 270px;
+}
